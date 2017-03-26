@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI}% !^/mvc/js/.*$
+RewriteCond %{REQUEST_URI}% !^/mvc/test/.*$
+RewriteRule ^ index.php
+
+SetEnv ENVIRONMENT Development
